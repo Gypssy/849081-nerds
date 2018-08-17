@@ -19,7 +19,9 @@
                 <li><a href="contacts.html">Контакты</a></li>
             </ul>
             <ul class="user-navigation">
-                <li><a class="purchase-basket" href="#">Корзина</a></li>
+                <li class="purchase-basket">
+                 <a class="purchase-basket" href="purchase-basket">Корзина</a>
+               </li>
             </ul>
         </nav>
     </header>
@@ -124,8 +126,10 @@
             <p>
                 Телефон: +7 (812) 275-75-75
             </p>
-            <a class="button" href="contacts.html">Обратная связь</a>
-            <img src="img/map.png" width="1000" height="500" alt="Местоположение">
+            <a class="button" href="write-us.html">Напишите нам</a>
+            <p>
+            <img src="img/map.png" width="1000" height="500" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+            </p>
         </section>
     </main>
     <footer class="main-footer">
@@ -142,12 +146,16 @@
 
         <section class="modal write-us">
             <h2>Напишите нам</h2>
-            <p>Ваше имя:</p>
-            <p>Ваш e-mail:</p>
-            <p>Текст письма:</p>
-            <!-- Здесь будет форма -->
-            <a class="button" href="#">Отправить</a>
-            <span class="modal-close">x</span>
+            <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+            <p><label class="visually-hidden" for="name-window">Ваше имя:</label>
+              <input class="name-window" id="name-window" type="text" name="name" placeholder="Имя Фамилия"></p>
+            <p><label class="visually-hidden" for="email-window">Ваш e-mail:</label>
+            <input class="email-window" id="email-window" type="text" name="email" placeholder="email@example.com"></p>    
+            <p><label class="visually-hidden" for="text-window">Текст письма:</label>
+              <input class="text-window" id="text-window" type="text" name="text" placeholder="В свободной форме"></p>
+            <button class="button" type="submit">Отправить</button>
+            </form>
+            <button class="modal-close" type="button"><!--Закрыть--></button>
         </section>
     </footer>
 </body>
