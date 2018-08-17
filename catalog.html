@@ -29,18 +29,22 @@
     <main class="container">
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            
+
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                     <legend>Стоимость:</legend>
-                    <input class="visually-hidden filter-input filter-input-range" type="range" id="cost" name="cost" min="0" max="15000" step="1">
-                    <label for="cost">От 0 до 15000</label>
+                    <input class="filter-input-range" type="range" id="cost" name="cost" min="0" max="15000" step="1">
+                    <label for="start">От</label>
+                    <output name="start" id="start">0</output>
+                    <label for="end">До</label>
+                    <output name="end" id="end">15000</output>
+
                 </fieldset>
                 <fieldset>
                     <legend>Сетка:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                            <input class="filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
                             <label for="filter-adaptive">Адаптивная</label>
                         </li>
                         <li class="filter-option">
@@ -58,23 +62,23 @@
                     <legend>Особенности:</legend>
                     <ul>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                            <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
                             <label for="filter-slider">Слайдер</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantege" id="filter-advantege">
+                            <input class="filter-input-checkbox" type="checkbox" name="advantege" id="filter-advantege">
                             <label for="filter-advantege">Блок преимуществ</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                            <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
                             <label for="filter-news">Новости</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                            <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
                             <label for="filter-gallery">Галлерея</label>
                         </li>
                         <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                            <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
                             <label for="filter-basket">Корзина</label>
                         </li>
                     </ul>
@@ -84,14 +88,18 @@
         </section>
         <section class="sort">
             <h2 class="visually-hidden">сортировка товаров</h2>
-            
+
             <h3>Сортировать:</h3>
-             <ul class="sort">
-                <li class="sort-current"><a href="price.html">По цене</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
+            <ul class="sort">
+                <li class="sort-current"><a href="#">По цене</a></li>
+                <li><a href="#">Клиенты</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
-            
+            <ul class="sort-arrows">
+                <li><a href="#">↓</a></li>
+                <li><a href="#">↑</a></li>
+            </ul>
+
             <!--<form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
                     <legend>Сортировать:</legend>
@@ -100,74 +108,74 @@
                 <input class="visually-hidden filter-input filter-input-button" type="button" value="По названию">
             </fieldset>
             </form>-->
-            
+
         </section>
         <section class="catalog">
             <h2 class="visually-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
-                
-                 <li class="catalog-item">
-                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-sedona.jpg" width="100" height="150" alt="SEDONA информационный сайт для туристов">
-                    </p>
-                     </a>
-                     <h3>SEDONA </h3>
-                     <p class="catalog-item-image">Информационный сайт для туристов</p>
-                     <button class="button-purchase" type="button">9 900 </button>                 </li>    
-                <li class="catalog-item">
-                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-pink.jpg" width="100" height="150" alt="PINK Продуктовый лендинг приложения для OS и Android">
-                    </p>
-                     </a>
-                     <h3>PINK </h3>
-                     <p class="catalog-item-image">Продуктовый лендинг приложения для OS и Android</p>
-                     <button class="button-purchase" type="button">9 900 </button>                 </li>  
-                <li class="catalog-item">
-                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-barbershop.jpg" width="100" height="150" alt="BARBERSHOP Сайт салона красоты. Для мужчин,да">
-                    </p>
-                     </a>
-                     <h3>BARBERSHOP</h3>
-                     <p class="catalog-item-image">Сайт салона красоты. Для мужчин,да.</p>
-                     <button class="button-purchase" type="button">9 900 </button>                 </li>
+
                 <li class="catalog-item">
                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-mishka.jpg" width="100" height="150" alt="MISHKA интернет-магазин вязаных игрушек">
-                    </p>
+                        <p class="catalog-item-image">
+                            <img src="img/img-sedona.jpg" width="100" height="150" alt="SEDONA информационный сайт для туристов">
+                        </p>
+                    </a>
+                    <h3>SEDONA </h3>
+                    <p class="catalog-item-image">Информационный сайт для туристов</p>
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a> </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/img-pink.jpg" width="100" height="150" alt="PINK Продуктовый лендинг приложения для OS и Android">
+                        </p>
+                    </a>
+                    <h3>PINK </h3>
+                    <p class="catalog-item-image">Продуктовый лендинг приложения для OS и Android</p>
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a> </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/img-barbershop.jpg" width="100" height="150" alt="BARBERSHOP Сайт салона красоты. Для мужчин,да">
+                        </p>
+                    </a>
+                    <h3>BARBERSHOP</h3>
+                    <p class="catalog-item-image">Сайт салона красоты. Для мужчин,да.</p>
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a> </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/img-mishka.jpg" width="100" height="150" alt="MISHKA интернет-магазин вязаных игрушек">
+                        </p>
                     </a>
                     <h3>MISHKA</h3>
                     <p class="catalog-item-price">
                         Интернет-магазин вязаных игрушек</p>
-                        <button class="button-purchase" type="button">9 900 </button>
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a>
                 </li>
-                
+
                 <li class="catalog-item">
                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-aplus.jpg" width="100" height="150" alt="A PLUS Лендинг курсов повышения квалификации">
-                    </p>
+                        <p class="catalog-item-image">
+                            <img src="img/img-aplus.jpg" width="100" height="150" alt="A PLUS Лендинг курсов повышения квалификации">
+                        </p>
                     </a>
                     <h3>A PLUS</h3>
                     <p class="catalog-item-price">
                         Лендинг курсов повышения квалификации</p>
-                        <button class="button-purchase" type="button">9 900 </button>
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a>
                 </li>
-                
+
                 <li class="catalog-item">
                     <a href="catalog-item.html">
-                    <p class="catalog-item-image">
-                              <img src="img/img-kvast.jpg" width="100" height="150" alt="KBACT Промо-сайт производителя крафтового кваса">
-                    </p>
+                        <p class="catalog-item-image">
+                            <img src="img/img-kvast.jpg" width="100" height="150" alt="KBACT Промо-сайт производителя крафтового кваса">
+                        </p>
                     </a>
                     <h3>KBACT</h3>
                     <p class="catalog-item-price">
                         Промо-сайт производителя крафтового кваса</p>
-                        <button class="button-purchase" type="button">9 900 </button>
-                </li>    
+                    <a class="button-learn-more" href="#">9 900 РУБ.</a>
+                </li>
             </ul>
             <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
@@ -206,12 +214,12 @@
         <section class="modal write-us">
             <h2>Напишите нам</h2>
             <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-                <p><label class="visually-hidden" for="name-window">Ваше имя:</label>
-                    <input class="name-window" id="name-window" type="text" name="name" placeholder="Имя Фамилия"></p>
-                <p><label class="visually-hidden" for="email-window">Ваш e-mail:</label>
-                    <input class="email-window" id="email-window" type="text" name="email" placeholder="email@example.com"></p>
-                <p><label class="visually-hidden" for="text-window">Текст письма:</label>
-                    <input class="text-window" id="text-window" type="text" name="text" placeholder="В свободной форме"></p>
+                <p><label class="name-surname" for="name-surname">Ваше имя:</label>
+                    <textarea name="name-surname" id="name-surname" placeholder="Имя Фамилия"></textarea></p>
+                <p><label class="email" for="email">Ваш e-mail:</label>
+                    <textarea name="email" id="email" placeholder="email@example.com"></textarea></p>
+                <p><label class="text" for="text" >Текст письма:</label>
+                    <textarea name="text" id="text" placeholder="В свободной форме"></textarea></p>
                 <button class="button" type="submit">Отправить</button>
             </form>
             <button class="modal-close" type="button"><!--Закрыть--></button>
