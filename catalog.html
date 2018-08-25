@@ -13,7 +13,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
-               <img src="img/nerds-logo.svg" width="100" height="50" alt="Логотип студии Нёрдс">
+               <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
                  </a>
             <ul class="site-navigation">
                 <li><a href="info.html">Студия</a></li>
@@ -26,25 +26,33 @@
                     <a class="purchase-basket" href="purchase-basket">Корзина</a>
                 </li>
             </ul>
-            <h1 class="page-title">Магазин готовых шаблонов</h1>
         </nav>
+         <section class="title">
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
+         </section>
     </header>
-    <main class="container">
+    <main>
+        <div class="main-container">
         <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
 
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
+                    <div class="range-section">
                     <legend>Стоимость:</legend>
                     <input class="filter-input-range" type="range" id="cost" name="cost" min="0" max="15000" step="1">
+                    </div>
+                    <div class="cost-section">
                     <label for="start">От</label>
                     <output class="start" name="start" id="start">0</output>
                     <label for="end">До</label>
                     <output class="end" name="end" id="end">15000</output>
-
+                    </div>                      
                 </fieldset>
+                
                 <fieldset>
                     <legend>Сетка:</legend>
+                    <div class="filter-section">
                     <ul>
                         <li class="filter-option">
                             <input class="filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
@@ -59,10 +67,12 @@
                             <label for="filter-rubber">Резиновая</label>
                         </li>
                     </ul>
-
+                    </div>
                 </fieldset>
+                
                 <fieldset>
                     <legend>Особенности:</legend>
+                    <div class="filter-section">
                     <ul>
                         <li class="filter-option">
                             <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -85,33 +95,47 @@
                             <label for="filter-basket">Корзина</label>
                         </li>
                     </ul>
+                    </div>
                 </fieldset>
+                <div class="filtration-button">
                 <button type="submit" class="filter-button">Показать</button>
+                </div>
             </form>
         </section>
+            
+        <div>
         <section class="sort">
             <h2 class="visually-hidden">сортировка товаров</h2>
-
+            <div class="sort-section">
             <h3>Сортировать:</h3>
+                <div class="sort-navigation">
             <ul class="sort-name">
                 <li class="sort-current"><a href="#">По цене</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
+                </div>
+                    
+             <div class="arrows-navigation">       
             <ul class="sort-arrows">
                 <li><a href="#">↓</a></li>
                 <li><a href="#">↑</a></li>
             </ul>
-
+                 </div>
+                    
+            </div>
         </section>
+            
         <section class="catalog">
+            <div class="catalog-section">
             <h2 class="visually-hidden">Список шаблонов</h2>
+            
             <ul class="catalog-list">
 
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-sedona.jpg" width="100" height="150" alt="SEDONA информационный сайт для туристов">
+                            <img src="img/img-sedona.jpg" width="360" height="615" alt="SEDONA информационный сайт для туристов">
                         </p>
                     </a>
                     <div class="price-menu"><h3>SEDONA </h3>
@@ -122,7 +146,7 @@
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-pink.jpg" width="100" height="150" alt="PINK Продуктовый лендинг приложения для OS и Android">
+                            <img src="img/img-pink.jpg" width="360" height="615" alt="PINK Продуктовый лендинг приложения для OS и Android">
                         </p>
                     </a>
                     <div class="price-menu"><h3>PINK </h3>
@@ -133,7 +157,7 @@
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-barbershop.jpg" width="100" height="150" alt="BARBERSHOP Сайт салона красоты. Для мужчин,да">
+                            <img src="img/img-barbershop.jpg" width="360" height="615" alt="BARBERSHOP Сайт салона красоты. Для мужчин,да">
                         </p>
                     </a>
                     <div class="price-menu"><h3>BARBERSHOP</h3>
@@ -144,7 +168,7 @@
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-mishka.jpg" width="100" height="150" alt="MISHKA интернет-магазин вязаных игрушек">
+                            <img src="img/img-mishka.jpg" width="360" height="615" alt="MISHKA интернет-магазин вязаных игрушек">
                         </p>
                     </a>
                     <div class="price-menu"><h3>MISHKA</h3>
@@ -157,7 +181,7 @@
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-aplus.jpg" width="100" height="150" alt="A PLUS Лендинг курсов повышения квалификации">
+                            <img src="img/img-aplus.jpg" width="360" height="615" alt="A PLUS Лендинг курсов повышения квалификации">
                         </p>
                     </a>
                     <div class="price-menu"><h3>A PLUS</h3>
@@ -170,7 +194,7 @@
                 <li class="catalog-item">
                     <a href="catalog-item.html">
                         <p class="catalog-item-image">
-                            <img src="img/img-kvast.jpg" width="100" height="150" alt="KBACT Промо-сайт производителя крафтового кваса">
+                            <img src="img/img-kvast.jpg" width="360" height="615" alt="KBACT Промо-сайт производителя крафтового кваса">
                         </p>
                     </a>
                     <div class="price-menu"><h3>KBACT</h3>
@@ -180,6 +204,13 @@
                     </div>
                 </li>
             </ul>
+                </div>
+            </section>
+            </div>
+            </div>
+            
+            
+            <section class="pages">
             <ul class="pagination-list">
                 <li class="pagination-item pagination-item-current"><a>1</a></li>
                 <li class="pagination-item"><a href="#">2</a></li>
@@ -187,9 +218,12 @@
                 <li class="pagination-item"><a href="#">Следующая</a></li>
             </ul>
         </section>
-
-        <section class="contacts">
-            <h2>NЁRDS DESIGN STUDIO</h2>
+        
+        
+        
+        
+         <section class="contacts">
+            <div class="contact-form map-marker"><h2>NЁRDS DESIGN STUDIO</h2>
             <p>
                 191186, Санкт-Петербург,<br> ул.Б. Конюшенная, д. 19/8<br>
             </p>
@@ -197,12 +231,20 @@
                 Телефон: +7 (812) 275-75-75
             </p>
             <a class="button" href="write-us.html">Напишите нам</a>
-            <p>
-                <img src="img/map.png" width="1000" height="500" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-            </p>
+            </div>
         </section>
+            
+            <section class="map">
+                
+                <div class="map-image">
+                <img src="img/map.png" width="1200" height="420" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+                </div>
+            </section>
+        
     </main>
-    <footer class="main-footer">
+    
+     <footer class="main-footer">
+        <section class="footer">
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#">Вконтакте</a></li>
@@ -210,18 +252,21 @@
                 <li><a class="social-button" href="#">Инстаграм</a></li>
             </ul>
         </div>
-        <p class="footer-slogan">
+<div class="slogan">
+ <p class="footer-slogan">
             <b>Давайте дружить, это выгодно!</b></p>
         <p>Скидка 10% для друзей из социальных сетей</p>
+    </div>
+            </section>
 
         <section class="modal write-us">
             <h2>Напишите нам</h2>
             <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
                 <p><label class="name-surname" for="name-surname">Ваше имя:</label>
-                    <input class="name-surname" id="name-surname" type="text" name="name-surname" placeholder="Имя Фамилия" pattern="\D [^0-9]-[A-Za-zА-Яа-яЁё]" required></p>
+                    <input class="name-surname" id="name-surname" type="text" name="name-surname"  placeholder="Имя Фамилия" pattern="\D [^0-9]-[A-Za-zА-Яа-яЁё]" required></p>
                 <p><label class="email" for="email">Ваш e-mail:</label>
                     <input class="email" id="email" type="text" name="email" placeholder="email@example.com"></p>
-                <p><label class="text" for="text" >Текст письма:</label>
+                <p><label class="text" for="text">Текст письма:</label>
                     <textarea name="text" id="text" placeholder="В свободной форме"></textarea></p>
                 <button class="button" type="submit">Отправить</button>
             </form>
