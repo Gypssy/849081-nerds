@@ -67,10 +67,6 @@ a {
 
 .sliders {
     background-color: #eeeeee;
-    background-image: url("../img/grey-back.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .sliders h2 {
@@ -132,10 +128,6 @@ a {
 
 .title {
     background-color: #eeeeee;
-    background-image: url("../img/grey-back.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 .advanteges-list {
@@ -503,7 +495,6 @@ a {
 
 .price-menu {
     background-color: #eeeeee;
-    background-image: url("../img/grey-back.jpg");
 }
 
 .price-menu .button-learn-more {
@@ -555,9 +546,13 @@ a {
 }
 html {
  box-sizing: border-box;
+}
+
+.main-page {
  width:1200px;
- margin-right: 20px;
- margin-left: 20px;
+ 
+ padding: 0 20px;
+ margin: 0 auto;
 }
 
 .main-header {
