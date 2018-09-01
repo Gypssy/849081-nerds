@@ -61,16 +61,19 @@
                         <div class="filter-section">
                             <ul>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
-                                    <label for="filter-adaptive">Адаптивная</label>
+                                    <label class="login-radio" for="filter-adaptive">Адаптивная</label>
+                                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+                                    <span class="checkbox-indicator-adaptive"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-radio" type="radio" name="product-group" value="fixed" id="filter-fixed">
-                                    <label for="filter-fixed">Фиксированая</label>
+                                    <label class="login-radio" for="filter-fixed">Фиксированая</label>
+                                    <input class="filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="fixed" id="filter-fixed">
+                                    <span class="checkbox-indicator-fixed"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class=" filter-input filter-input-radio" type="radio" name="product-group" value="rubber" id="filter-rubber">
-                                    <label for="filter-rubber">Резиновая</label>
+                                    <label class="login-radio" for="filter-rubber">Резиновая</label>
+                                    <input class=" filter-input filter-input-radio visually-hidden" type="radio" name="product-group" value="rubber" id="filter-rubber">
+                                    <span class="checkbox-indicator-rubber"></span>
                                 </li>
                             </ul>
                         </div>
@@ -81,24 +84,29 @@
                         <div class="filter-section">
                             <ul>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-                                    <label for="filter-slider">Слайдер</label>
+                                    <label class="login-checkbox"  for="filter-slider">Слайдер</label>
+                                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                                    <span class="checkbox-indicator-slider"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="advantege" id="filter-advantege">
-                                    <label for="filter-advantege">Блок преимуществ</label>
+                                     <label class="login-checkbox"  for="filter-advantege">Блок преимуществ</label>
+                                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="advantege" id="filter-advantege">
+                                   <span class="checkbox-indicator-advantages"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-                                    <label for="filter-news">Новости</label>
+                                    <label class="login-checkbox"  for="filter-news">Новости</label>
+                                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                                    <span class="checkbox-indicator-news"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-                                    <label for="filter-gallery">Галлерея</label>
+                                    <label class="login-checkbox"  for="filter-gallery">Галлерея</label>
+                                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+                                    <span class="checkbox-indicator-gallery"></span>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
-                                    <label for="filter-basket">Корзина</label>
+                                     <label class="login-checkbox" for="filter-basket">Корзина</label>
+                                    <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
+                                    <span class="checkbox-indicator-basket"></span>
                                 </li>
                             </ul>
                         </div>
@@ -124,8 +132,8 @@
 
                         <div class="arrows-navigation">
                             <ul class="sort-arrows">
-                                <li><a href="#">↓</a></li>
-                                <li><a href="#">↑</a></li>
+                                <li class="triangle-bottom"><a href="#"></a></li>
+                                <li class="triangle-top"><a href="#"></a></li>
                             </ul>
                         </div>
 
@@ -279,13 +287,15 @@
                 <p>Скидка 10% для друзей из социальных сетей</p>
             </div>
         </section>
-
-        <section class="modal write-us">
+    </footer>
+    <section class="modal write-us">
             <h2>Напишите нам</h2>
             <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+               <div class="modal-window">
                 <p class="write-us-item">
                     <label for="write-us-name">Ваше имя:</label>
                     <input id="write-us-name" type="text" name="name-surname" placeholder="Имя Фамилия" pattern="\D [^0-9]-[A-Za-zА-Яа-яЁё]" required></p>
+                       
                 <p class="write-us-item">
                     <label for="write-us-email">Ваш e-mail:</label>
                     <input id="write-us-email" type="text" name="email" placeholder="email@example.com"></p>
@@ -293,10 +303,10 @@
                     <label for="write-us-text">Текст письма:</label>
                     <textarea id="write-us-text" placeholder="В свободной форме"></textarea></p>
                 <button class="button-learn-more" type="submit">Отправить</button>
+                </div>
             </form>
             <button class="modal-close" type="button"></button>
         </section>
-    </footer>
 </body>
 
 </html>
