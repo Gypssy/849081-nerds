@@ -1262,17 +1262,19 @@ fieldset {
 }
 
 .sort-navigation {
-    padding-left: 250px;
+    padding-left: 266px;
+    margin-top: 6px;
 }
 
 .arrows-navigation {
-    padding-left: 20px;
+    padding-left: 12px;
 }
 
 .sort-name {
     display: flex;
     justify-content: space-between;
-    width: 280px;
+    width: 272px;
+    font-size: 14px;
 }
 
 .sort-arrows {
@@ -1326,7 +1328,7 @@ fieldset {
 
 .catalog {
     width: 760px;
-    margin-left: 140px;
+    margin: 44px 0px -28px 148px;
 }
 
 
@@ -1374,16 +1376,16 @@ fieldset {
 
 
 .catalog-section {
-    width: 760px;
+    width: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .catalog-item {
-    width: 360px;
+    width: 380px;
     margin-right: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 34px;
 
 }
 
@@ -1451,10 +1453,12 @@ fieldset {
 
 .pages {
     width: 450px;
+    padding-left: 50px;
+    margin-bottom: -21px;
 }
 
 .pagination-item {
-    margin-right: 5px;
+    margin-right: 11px;
 }
 
 .pagination-item a {
@@ -1464,7 +1468,7 @@ fieldset {
 
     font: inherit;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 25px;
     font-weight: 500;
     text-align: center;
     color: #000000;
@@ -1507,7 +1511,7 @@ fieldset {
 
     font: inherit;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 25px;
     font-weight: 500;
     text-align: center;
     color: #000000;
