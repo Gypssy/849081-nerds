@@ -103,6 +103,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     width: 235px;
     padding-left: 3px;
+    padding-bottom: 7px;
 }
 
 .main-header-logo:hover {
@@ -140,6 +141,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation-current {
     border-bottom: 2px solid #fb565a;
+    padding-bottom: 3px;
 
 }
 
@@ -918,7 +920,7 @@ input[type="radio"].visually-hidden {
 
 .title {
     justify-content: center;
-    padding: 30px 0 72px 15px;
+    padding: 30px 0 70px 15px;
 }
 
 
@@ -1073,6 +1075,7 @@ fieldset {
 
 .filter-section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
@@ -1089,8 +1092,9 @@ fieldset {
 
 .filter-section input[type="radio"] + label {
     display: block;
-    line-height: 43px;
+    line-height: 50px;
     cursor: pointer;
+    margin-bottom: -10px;
 }
 
 .filter-section input[type="radio"] + label::before {
@@ -1125,6 +1129,7 @@ fieldset {
 .checkbox-item {
     margin-left: -3px;
     padding-bottom: 25px;
+    padding-top: 8px;
 }
 
 .filter-section input[type="checkbox"] {
@@ -1133,15 +1138,16 @@ fieldset {
 
 .filter-section input[type="checkbox"] + label {
     display: block;
-    line-height: 42px;
+    line-height: 50px;
     cursor: pointer;
+    margin-bottom: -10px;
 }
 
 .filter-section input[type="checkbox"] + label::before {
     content: "";
     display: inline-block;
-    margin-right: 31px;
-    width: 23px;
+    margin-right: 9px;
+    width: 27px;
     height: 23px;
     color: #c1c1c1;
     vertical-align: middle;
@@ -1167,13 +1173,13 @@ fieldset {
 
 .filtration-button{
     padding-left: 9px;
-    margin-top: 3px;
+    margin-top: 11px;
 }
 
 .filter-button {
     display: block;
     width: 260px;
-    padding: 13px 0;
+    padding: 16px 0;
 
     font: inherit;
     font-size: 16px;
@@ -1202,7 +1208,13 @@ fieldset {
 
 .sort {
     width: 760px;
-    margin-left: 140px;
+    margin-left: 148px;
+    margin-top: 36px;
+}
+
+.sort-section h3 {
+    text-transform: uppercase;
+    font-size: 18px;
 }
 
 
@@ -1267,13 +1279,14 @@ fieldset {
     display: flex;
     justify-content: flex-end;
     width: 60px;
+    position: relative;
 }
 
 .triangle-bottom {
     content: "";
     position: absolute;
-    top: 265px;
-    right: 430px;
+    top: 11px;
+    left: 36px;
     width: 12px;
     height: 12px;
     background-image: url("../img/icon-down-dir.svg");
@@ -1286,8 +1299,8 @@ fieldset {
 .triangle-top {
     content: "";
     position: absolute;
-    top: 265px;
-    right: 400px;
+    top: 11px;
+    right: -17px;
     width: 12px;
     height: 12px;
     background-image: url("../img/icon-up-dir.svg");
