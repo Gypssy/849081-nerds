@@ -9,9 +9,6 @@ body {
     color: #283136;
 
     background-color: #ffffff;
-    background-image: url("../img/white-back.jpg");
-    background-position: center;
-    background-repeat: repeat;
 }
 
 a {
@@ -78,11 +75,8 @@ input[type="radio"].visually-hidden {
     color: #283136;
 
     background-color: #eeeeee;
-    background-image: url("../img/grey-back.jpg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
+
 
 .main-header {
     background-color: #eeeeee;
@@ -97,6 +91,13 @@ input[type="radio"].visually-hidden {
 
 .main-navigation ul {
     padding: 0;
+}
+
+.main-header-logotype {
+    display: flex;
+    width: 235px;
+    padding-left: 3px;
+    padding-bottom: 6px;
 }
 
 .main-header-logo {
@@ -148,11 +149,11 @@ input[type="radio"].visually-hidden {
 
 .site-navigation li {
     padding: 14px 46px 0 0;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .site-navigation li:last-child {
-    padding-right: 0;
+    padding-right: 1px;
     margin-left: auto;
     position: relative;
     padding-left: 50px;
@@ -165,8 +166,8 @@ input[type="radio"].visually-hidden {
 .purchase-basket::before {
     content: "";
     position: absolute;
-    top: 8px;
-    left: -40px;
+    top: 7px;
+    left: -41px;
     width: 15px;
     height: 15px;
     background-image: url("../img/cart-icon.svg");
@@ -342,7 +343,7 @@ input[type="radio"].visually-hidden {
 
 .advanteges-item h3 {
     font-size: 24px;
-    line-height: 16px;
+    line-height: 17px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -351,14 +352,14 @@ input[type="radio"].visually-hidden {
     font-size: 16px;
     line-height: 24px;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 }
 
 .advanteges-button {
     display: block;
     width: 160px;
-    padding: 16px 0;
-    margin-bottom: 2px;
+    padding: 17px 0px 15px 0px;;
+    margin-bottom: 0px;
 
     font: inherit;
     font-size: 16px;
@@ -427,14 +428,15 @@ input[type="radio"].visually-hidden {
 }
 
 .advanteges-line {
-    margin: 0 20px;
+    margin-left: 29px;
+    margin-right: 12px;
 }
 
 .advanteges-list {
     display: flex;
     justify-content: space-between;
     width: 1100px;
-    padding: 80px 8px;
+    padding: 79px 8px 82px 8px;
     margin: 0;
 }
 
@@ -471,6 +473,10 @@ input[type="radio"].visually-hidden {
     margin-bottom: 12px;
 }
 
+.information p {
+    color:#283136;
+}
+
 .studio-info {
     width: 1160px;
     display: flex;
@@ -495,8 +501,8 @@ input[type="radio"].visually-hidden {
 .develope li::before {
     content: "";
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 22px;
+    left: 1px;
     width: 25px;
     height: 2px;
     background-image: url("../img/red-line.png");
@@ -517,6 +523,8 @@ input[type="radio"].visually-hidden {
 .nerds-procent h4 {
     text-align: center;
     text-transform: uppercase;
+    margin-top: 19px;
+    margin-bottom: 22px;
 }
 
 .procent p {
@@ -540,11 +548,15 @@ input[type="radio"].visually-hidden {
 }
 
 .procent-list li {
-    padding-right: 27px;
+    padding-right: 29px;
+}
+
+.procent-list .procent-payment {
+    margin-left: -5px;
 }
 
 .procent-list p {
-    line-height: 18px;
+    line-height: 19px;
 }
 
 .procent-list-title {
@@ -591,7 +603,9 @@ input[type="radio"].visually-hidden {
 }
 
 .sponsor-line-before {
-    top: 0;
+    top: -1px;
+    right: 10px;
+    left: 10px;
 }
 
 .sponsor-list {
@@ -603,7 +617,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     margin: 0;
     width: 1160px;
-    padding: 50px 10px 37px;
+    padding: 90px 10px 92px 9px
 }
 
 .sponsor-list li {
@@ -611,6 +625,40 @@ input[type="radio"].visually-hidden {
     width: 260px;
     text-align: center;
     align-self: center;
+}
+
+.sponsor-logo-html {
+    position: absolute;
+    width: 199px;
+    height: 68px;
+    top: -27px;
+    left: 30px;
+}
+
+.sponsor-logo-barbershop {
+    position: absolute;
+    width: 209px;
+    height: 90px;
+    top: -43px;
+    left: 25px;
+}
+
+
+.sponsor-logo-pink {
+    position: absolute;
+    width: 185px;
+    height: 52px;
+    top: -24px;
+    left: 37px;
+}
+
+
+.sponsor-logo-mishka {
+    position: absolute;
+    width: 173px;
+    height: 84px;
+    top: -37px;
+    left: 43px;
 }
 
 .sponsor-list li::after {
@@ -623,13 +671,6 @@ input[type="radio"].visually-hidden {
     height: 50px;
 }
 
-.sponsor-list li:last-child::after {
-    display: none;
-}
-
-.sponsor-list a {
-    display: inline-block;
-}
 
 .sponsor-list .sponsor-logo-html,
 .sponsor-list .sponsor-logo-barbershop,
@@ -650,6 +691,14 @@ input[type="radio"].visually-hidden {
 .sponsor-list .sponsor-logo-pink:active,
 .sponsor-list .sponsor-logo-mishka:active {
     opacity: 0.2;
+}
+
+.line-after {
+    position: absolute;
+    border-bottom: 2px solid #eee;
+    top: 181px;
+    right: 10px;
+    left: 10px;
 }
 
 .map {
@@ -678,13 +727,18 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form p {
-    line-height: 20px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 3px;
+    color:#666666;
 }
 
 .contact-form .button-learn-more {
-    margin: 36px 0 17px;
+    margin: 37px 0 17px;
     width: auto;
     padding: 17px 44px;
+    font-weight: 400;
 }
 
 .contacts p {
@@ -767,7 +821,9 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
-    margin: 30px 10px;
+    margin: 30px 0px;
+    margin-left: 8px;
+    margin-right: 11px;
 }
 
 .slogan {
@@ -784,9 +840,6 @@ input[type="radio"].visually-hidden {
     position: fixed;
 
     background-color: #ffffff;
-    background-image: url("../img/white-back.jpg");
-    background-position: 0 0;
-    background-repeat: repeat;
     box-shadow: 0px 25px 50px 10px rgba(0, 0, 0, 0.7);
 }
 
@@ -951,14 +1004,14 @@ fieldset {
 
 .range-filter {
     width: 260px;
-    margin-top: 49px;
+    margin-top: 47px;
 }
 
 .range-controls {
     position: relative;
 
     height: 41px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
@@ -1019,8 +1072,8 @@ fieldset {
 
 .price-controls input {
     width: 60px;
-    padding: 8px 10px;
-    margin-left: 10px;
+    padding: 8px 10px 9px 8px;
+    margin: -1px 2px 0px 9px;
 
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
@@ -1345,7 +1398,7 @@ fieldset {
 .catalog-item::before {
     content: "";
     position: absolute;
-    top: -22.5px;
+    top: -21.5px;
     width: 360px;
     height: 40px;
     background-image: url("../img/browser.svg");
@@ -1435,7 +1488,7 @@ fieldset {
 }
 
 .price-menu {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
@@ -1448,9 +1501,9 @@ fieldset {
 
 }
 
-/*.catalog-item:hover .price-menu {
+.catalog-item:hover .price-menu {
     display: flex;
-}*/
+}
 
 .pagination-list {
     list-style: none;
