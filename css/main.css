@@ -899,7 +899,7 @@ input[type="radio"].visually-hidden {
 }
 
 .write-us-form textarea:invalid {
-	border-color: ##e74246;
+	border-color: #e74246;
 	color: #e74246
 }
 
