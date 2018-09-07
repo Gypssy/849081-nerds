@@ -96,6 +96,14 @@ opacity:.8
 opacity:.2
 }
 
+.main-header-logotype:hover {
+opacity:.8
+}
+
+.main-header-logotype:active {
+opacity:.2
+}
+
 .site-navigation {
 display:flex;
 flex-wrap:wrap;
