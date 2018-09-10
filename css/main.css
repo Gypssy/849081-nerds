@@ -892,7 +892,8 @@ input[type="radio"].visually-hidden {
     padding-left: 14px;
     padding-top: 14px;
     margin-top: 14px;
-    margin-bottom: 47px
+    margin-bottom: 47px;
+    resize:none
 }
 
 .write-us-form textarea:hover {
