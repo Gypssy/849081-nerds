@@ -649,7 +649,7 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-	background-image: url(../img/map.png);
+	background-image: url(../img/map.jpg);
 	height: 415px;
 	margin-bottom: 40px;
 	margin-top: 80px;
@@ -669,8 +669,10 @@ input[type="radio"].visually-hidden {
 }
 
 .contact-form h4 {
-	font-size: 17px;
-	word-spacing: 3.9px
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: -2px;
+    margin-top: 19px
 }
 
 .contact-form p {
@@ -678,7 +680,7 @@ input[type="radio"].visually-hidden {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 18px;
-	padding-top: 3px
+	padding-top: 0px
 }
 
 .contact-form .button-learn-more {
@@ -852,8 +854,10 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	line-height: 18px;
 	min-height: 50px;
-	text-transform: uppercase;
-	width: 360px
+	width: 360px;
+    padding-left: 14px;
+    margin-top: 14px;
+    margin-bottom: 36px
 }
 
 .write-us-form input:hover {
@@ -884,8 +888,11 @@ input[type="radio"].visually-hidden {
 	font-weight: 400;
 	line-height: 18px;
 	min-height: 120px;
-	text-transform: uppercase;
-	width: 800px
+	width: 800px;
+    padding-left: 14px;
+    padding-top: 14px;
+    margin-top: 14px;
+    margin-bottom: 47px
 }
 
 .write-us-form textarea:hover {
@@ -1070,8 +1077,9 @@ fieldset {
 .filter-section input[type="radio"]+label {
 	cursor: pointer;
 	display: block;
-	line-height: 50px;
-	margin-bottom: -10px
+	line-height: 20px;
+	margin-bottom: 3px;
+    margin-top: 12px
 }
 
 .filter-section input[type="radio"]+label::before {
@@ -1116,8 +1124,9 @@ fieldset {
 .filter-section input[type="checkbox"]+label {
 	cursor: pointer;
 	display: block;
-	line-height: 50px;
-	margin-bottom: -10px
+	line-height: 20px;
+    margin-bottom: 3px;
+    margin-top: 14px
 }
 
 .filter-section input[type="checkbox"]+label::before {
@@ -1299,7 +1308,7 @@ fieldset {
 }
 
 .catalog {
-	margin:63px 0 0 111px;
+	margin:61px 0 2px 110px;
     width:760px
 }
 
