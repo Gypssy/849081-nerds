@@ -1442,7 +1442,7 @@ fieldset {
 }
 
 .pages {
-	margin-bottom: -20px;
+	margin-bottom: -21px;
 	padding-left: 50px;
 	width: 450px;
     margin-top: -47px
@@ -1507,8 +1507,8 @@ fieldset {
 	font-variant: normal;
 	font-weight: 400;
 	font-weight: 500;
-	line-height: 25px;
-	padding: 13px 0;
+	line-height: 18px;
+	padding: 17px 0;
 	text-align: center;
 	text-transform: uppercase;
 	vertical-align: middle;
