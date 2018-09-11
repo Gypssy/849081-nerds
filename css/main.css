@@ -650,6 +650,7 @@ input[type="radio"].visually-hidden {
 
 .map {
 	background-image: url(../img/map.jpg);
+    background-color: #e9e5dc;
 	height: 415px;
 	margin-bottom: 40px;
 	margin-top: 80px;
@@ -791,7 +792,7 @@ input[type="radio"].visually-hidden {
 
 .write-us {
 	left: 200px;
-	padding: 80px 100px;
+	padding: 50px 40px 80px 100px;
 	top: 200px;
 	width: 960px
 }
@@ -917,6 +918,10 @@ input[type="radio"].visually-hidden {
 
 .write-us-field {
 	width: 760px
+}
+
+.modal-window .button-learn-more {
+    margin-top: -20px
 }
 
 .title {
