@@ -6,28 +6,9 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     
-<!--<style>
-    body {
-        position: relative;
-    }
-    body:after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 1440px;
-        height: 3210px;
-        content: "";
-        background-image: url('nerds-catalog.jpg');
-        z-index: 9999;
-        opacity: .5;
-    }
-</style>-->
-    
-    
-    
-    
+  
 </head>
 
 <body>
@@ -46,7 +27,7 @@
             </ul>
         </nav>
         
-        <section class="title container container-flex">
+        <section class="title">
             <h1 class="page-title">Магазин готовых шаблонов</h1>
         </section>
             </div>
@@ -140,8 +121,8 @@
 
                         <div class="arrows-navigation">
                             <ul class="sort-arrows">
-                                <li class="triangle-bottom"><a class="visually-hidden" href="#" tabindex="21">По убыванию</a></li>
-                                <li class="triangle-top"><a class="visually-hidden" href="#" tabindex="22">По возрастанию</a></li>
+                                <li class="triangle-bottom" tabindex="21"><a class="visually-hidden" href="#" >По убыванию</a></li>
+                                <li class="triangle-top" tabindex="22"><a class="visually-hidden" href="#" >По возрастанию</a></li>
                             </ul>
                         </div>
 
@@ -161,7 +142,7 @@
                                     </p>
                                 
                                 <div class="price-menu">
-                                    <h3><a href="catalog-item.html">SEDONA</a></h3>
+                                    <h3><a class="catalog-title" href="catalog-item.html">SEDONA</a></h3>
                                     <p class="catalog-item-price">Информационный сайт для туристов</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
@@ -173,7 +154,7 @@
                                     </p>
                                 
                                 <div class="price-menu">
-                                    <h3> <a href="catalog-item.html">PINK</a> </h3>
+                                    <h3> <a class="catalog-title" href="catalog-item.html">PINK</a> </h3>
                                     <p class="catalog-item-price">Продуктовый лендинг приложения для OS и Android</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
@@ -185,7 +166,7 @@
                                     </p>
                                 
                                 <div class="price-menu">
-                                    <h3><a href="catalog-item.html">BARBERSHOP</a></h3>
+                                    <h3><a class="catalog-title" href="catalog-item.html">BARBERSHOP</a></h3>
                                     <p class="catalog-item-price">Сайт салона красоты. Для мужчин,да.</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
@@ -197,7 +178,7 @@
                                     </p>
                                
                                 <div class="price-menu">
-                                    <h3><a href="catalog-item.html">MISHKA </a></h3>
+                                    <h3><a class="catalog-title" href="catalog-item.html">MISHKA </a></h3>
                                     <p class="catalog-item-price">
                                         Интернет-магазин вязаных игрушек</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
@@ -211,7 +192,7 @@
                                     </p>
                                 
                                 <div class="price-menu">
-                                    <h3><a href="catalog-item.html">A PLUS</a></h3>
+                                    <h3><a class="catalog-title" href="catalog-item.html">A PLUS</a></h3>
                                     <p class="catalog-item-price">
                                         Лендинг курсов повышения квалификации</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
@@ -225,7 +206,7 @@
                                     </p>
                                 
                                 <div class="price-menu">
-                                    <h3><a href="catalog-item.html">KBACT</a></h3>
+                                    <h3><a class="catalog-title" href="catalog-item.html">KBACT</a></h3>
                                     <p class="catalog-item-price">
                                         Промо-сайт производителя крафтового кваса</p>
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
@@ -249,10 +230,10 @@
         </section>
 
 
-     <section class="map ">
+     <section class="map">
           <h2 class="visually-hidden">Контакты</h2>
 
-            <div class="map-image container container-flex">
+            <div class="container container-flex">
                 <div class="contact-form">
                     <h4>NЁRDS DESIGN STUDIO</h4>
                     <p>
