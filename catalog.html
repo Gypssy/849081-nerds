@@ -34,15 +34,15 @@
     <header class="main-header">
         <div class="container">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
+            <a class="main-header-logo" href="index.html" tabindex="1">
                 <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип студии Нёрдс">
             </a>
             <ul class="site-navigation">
-                <li><a href="info.html">Студия</a></li>
-                <li><a href="clients.html">Клиенты</a></li>
-                <li><a class="site-navigation-current" href="catalog.html">Магазин</a></li>
-                <li><a href="contacts.html">Контакты</a></li>
-           <li><a class="purchase-basket" href="purchase-basket">Корзина</a></li>
+                <li><a href="info.html" tabindex="2">Студия</a></li>
+                <li><a href="clients.html" tabindex="3">Клиенты</a></li>
+                <li><a class="site-navigation-current" href="catalog.html" tabindex="4">Магазин</a></li>
+                <li><a href="contacts.html" tabindex="5">Контакты</a></li>
+           <li><a class="purchase-basket" href="purchase-basket" tabindex="6">Корзина</a></li>
             </ul>
         </nav>
         
@@ -70,8 +70,8 @@
                                     <div class="toggle toggle-max"></div>
                                 </div>
                                 <div class="price-controls">
-                                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                    <label class="min-price">от <input name="min-price" type="text" value="0" tabindex="7"></label>
+                                    <label class="max-price">до <input name="max-price" type="text" value="15000" tabindex="8"></label>
                                 </div>
                             </div>
                         </div>
@@ -82,11 +82,11 @@
                         <h3>Сетка:</h3>
                         <div class="filter-section">
                             <input type="radio" name="filter-adaptive" value="adaptive" id="filter-adaptive">
-                            <label class="transcript" for="filter-adaptive">Адаптивная</label>
+                            <label class="transcript" for="filter-adaptive" tabindex="9">Адаптивная</label>
                             <input type="radio" name="filter-fixed" value="fixed" id="filter-fixed">
-                            <label class="transcript" for="filter-fixed">Фиксированная</label>
+                            <label class="transcript" for="filter-fixed" tabindex="10">Фиксированная</label>
                             <input type="radio" name="filter-rubber" value="rubber" id="filter-rubber">
-                            <label class="transcript" for="filter-rubber">Резиновая</label>
+                            <label class="transcript" for="filter-rubber" tabindex="11">Резиновая</label>
                         </div>
                         </div>
                     </fieldset>
@@ -97,30 +97,30 @@
                         <div class="filter-section">
                                     
                                     <input type="checkbox" name="filter-slider" id="filter-slider" checked>
-                                    <label class="transcript" for="filter-slider">Слайдер</label>
+                                    <label class="transcript" for="filter-slider" tabindex="12">Слайдер</label>
                                   
                                     
                                     <input type="checkbox" name="filter-advantege" id="filter-advantege">
-                                    <label class="transcript" for="filter-advantege">Блок преимуществ</label>
+                                    <label class="transcript" for="filter-advantege" tabindex="13">Блок преимуществ</label>
                                    
                                     
                                     <input type="checkbox" name="filter-news" id="filter-news" checked>
-                                    <label class="transcript" for="filter-news">Новости</label>
+                                    <label class="transcript" for="filter-news" tabindex="14">Новости</label>
                                     
                                 
                                     
                                     <input type="checkbox" name="filter-gallery" id="filter-gallery">
-                                    <label class="transcript" for="filter-gallery">Галерея</label>
+                                    <label class="transcript" for="filter-gallery" tabindex="15">Галерея</label>
                                    
                         
                                    
                                     <input type="checkbox" name="filter-basket" id="filter-basket">
-                                    <label class="transcript" for="filter-basket">Корзина</label>
+                                    <label class="transcript" for="filter-basket" tabindex="16">Корзина</label>
                             </div>      
                         </div>
                     </fieldset>
                     <div class="filtration-button">
-                        <button type="submit" class="filter-button">Показать</button>
+                        <button type="submit" class="filter-button" tabindex="17">Показать</button>
                     </div>
                 </form>
             </aside>
@@ -132,16 +132,16 @@
                         <h3>Сортировать:</h3>
                         <div class="sort-navigation">
                             <ul class="sort-name">
-                                <li class="sort-current"><a href="#">ПО ЦЕНЕ</a></li>
-                                <li><a href="#">ПО ТИПУ</a></li>
-                                <li><a href="#">ПО НАЗВАНИЮ</a></li>
+                                <li class="sort-current"><a href="#" tabindex="18">ПО ЦЕНЕ</a></li>
+                                <li><a href="#" tabindex="19">ПО ТИПУ</a></li>
+                                <li><a href="#" tabindex="20">ПО НАЗВАНИЮ</a></li>
                             </ul>
                         </div>
 
                         <div class="arrows-navigation">
                             <ul class="sort-arrows">
-                                <li class="triangle-bottom"><a class="visually-hidden" href="#">По убыванию</a></li>
-                                <li class="triangle-top"><a class="visually-hidden" href="#">По возрастанию</a></li>
+                                <li class="triangle-bottom"><a class="visually-hidden" href="#" tabindex="21">По убыванию</a></li>
+                                <li class="triangle-top"><a class="visually-hidden" href="#" tabindex="22">По возрастанию</a></li>
                             </ul>
                         </div>
 
@@ -154,7 +154,7 @@
 
                         <ul class="catalog-list">
 
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="23">
                                 
                                     <p class="catalog-item-image">
                                         <img src="img/img-sedona.jpg" width="360" height="576" alt="SEDONA информационный сайт для туристов">
@@ -166,7 +166,7 @@
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
                             </li>
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="24">
                                
                                     <p class="catalog-item-image">
                                         <img src="img/img-pink.jpg" width="360" height="576" alt="PINK Продуктовый лендинг приложения для OS и Android">
@@ -178,7 +178,7 @@
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
                             </li>
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="25">
                                 
                                     <p class="catalog-item-image">
                                         <img src="img/img-barbershop.jpg" width="360" height="576" alt="BARBERSHOP Сайт салона красоты. Для мужчин,да">
@@ -190,7 +190,7 @@
                                     <a class="button-learn-more" href="#">9 900 РУБ.</a>
                                 </div>
                             </li>
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="26">
                                 
                                     <p class="catalog-item-image">
                                         <img src="img/img-mishka.jpg" width="360" height="576" alt="MISHKA интернет-магазин вязаных игрушек">
@@ -204,7 +204,7 @@
                                 </div>
                             </li>
 
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="27">
                                 
                                     <p class="catalog-item-image">
                                         <img src="img/img-aplus.jpg" width="360" height="576" alt="A PLUS Лендинг курсов повышения квалификации">
@@ -218,7 +218,7 @@
                                 </div>
                             </li>
 
-                            <li class="catalog-item">
+                            <li class="catalog-item" tabindex="28">
                                 
                                     <p class="catalog-item-image">
                                         <img src="img/img-kvast.jpg" width="360" height="576" alt="KBACT Промо-сайт производителя крафтового кваса">
@@ -241,10 +241,10 @@
         <section class="pages container">
              <h2 class="visually-hidden">Нумерация страниц</h2>
             <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-                <li class="pagination-item-next"><a href="#">Следующая</a></li>
+                <li class="pagination-item pagination-item-current"><a tabindex="29">1</a></li>
+                <li class="pagination-item"><a href="#" tabindex="30">2</a></li>
+                <li class="pagination-item"><a href="#" tabindex="31">3</a></li>
+                <li class="pagination-item-next"><a href="#" tabindex="32">Следующая</a></li>
             </ul>
         </section>
 

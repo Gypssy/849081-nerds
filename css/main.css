@@ -86,7 +86,8 @@ input[type="radio"].visually-hidden {
 	width: 235px
 }
 
-.main-header-logo:hover {
+.main-header-logo:hover,
+.main-header-logo:focus {
 	opacity: .8
 }
 
@@ -94,7 +95,8 @@ input[type="radio"].visually-hidden {
 	opacity: .2
 }
 
-.main-header-logotype:hover {
+.main-header-logotype:hover,
+.main-header-logotype:focus {
 	opacity: .8
 }
 
@@ -117,7 +119,8 @@ input[type="radio"].visually-hidden {
 	vertical-align: middle
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
 	color: #fb565a
 }
 
@@ -207,19 +210,22 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
 	background-image: url(../img/slide1.png);
 	background-position: 95% 12px;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
+    background-color: #eee
 }
 
 .slider-item:nth-child(2) {
 	background-image: url(../img/slide2.png);
 	background-position: 100% 0;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
+    background-color: #eee
 }
 
 .slider-item:nth-child(3) {
 	background-image: url(../img/slide3.png);
 	background-position: 100% 20px;
-	background-repeat: no-repeat
+	background-repeat: no-repeat;
+    background-color: #eee
 }
 
 #product-1:checked~.slider-list .slider-item:nth-child(1) {
@@ -298,7 +304,8 @@ input[type="radio"].visually-hidden {
 	width: 240px
 }
 
-.button-learn-more:hover {
+.button-learn-more:hover,
+.button-learn-more:focus {
 	background-color: #e74246
 }
 
@@ -310,6 +317,7 @@ input[type="radio"].visually-hidden {
 
 .advanteges-list {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
 	margin: 0;
@@ -355,7 +363,8 @@ input[type="radio"].visually-hidden {
 	background-color: #fb565a
 }
 
-.advanteges-button-red:hover {
+.advanteges-button-red:hover,
+.advanteges-button-red:focus {
 	background-color: #e74246
 }
 
@@ -369,7 +378,8 @@ input[type="radio"].visually-hidden {
 	background-color: #00ca74
 }
 
-.advanteges-button-green:hover {
+.advanteges-button-green:hover,
+.advanteges-button-green:focus {
 	background-color: #00bc6c
 }
 
@@ -383,7 +393,8 @@ input[type="radio"].visually-hidden {
 	background-color: #efc84a
 }
 
-.advanteges-button-yellow:hover {
+.advanteges-button-yellow:hover,
+.advanteges-button-yellow:focus {
 	background-color: #eab534
 }
 
@@ -569,6 +580,7 @@ input[type="radio"].visually-hidden {
 
 .sponsor-list {
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 	list-style: none;
 	margin: 0;
@@ -633,6 +645,13 @@ input[type="radio"].visually-hidden {
 	opacity: 1
 }
 
+.sponsor-list .sponsor-logo-html:focus,
+.sponsor-list .sponsor-logo-barbershop:focus,
+.sponsor-list .sponsor-logo-pink:focus,
+.sponsor-list .sponsor-logo-mishka:focus {
+	opacity: 1
+}
+
 .sponsor-list .sponsor-logo-html:active,
 .sponsor-list .sponsor-logo-barbershop:active,
 .sponsor-list .sponsor-logo-pink:active,
@@ -663,10 +682,8 @@ input[type="radio"].visually-hidden {
 
 .contact-form {
 	background-color: #fff;
-	left: 29px;
-	padding: 28px 50px;
-	position: absolute;
-	top: 55px
+    margin: 53px 0px 0 7px;
+    padding: 31px 51px 28px 52px
 }
 
 .contact-form h4 {
@@ -731,7 +748,8 @@ input[type="radio"].visually-hidden {
 	width: 78px
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
 	background-color: #e74246
 }
 
@@ -740,6 +758,10 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button:hover path {
+	fill: #fff
+}
+
+.social-button:focus path {
 	fill: #fff
 }
 
@@ -811,7 +833,8 @@ input[type="radio"].visually-hidden {
 	width: 22px
 }
 
-.modal-close:hover {
+.modal-close:hover,
+.modal-close:focus {
 	background-color: #fff;
 	border: 0;
 	opacity: 1
@@ -876,6 +899,10 @@ input[type="radio"].visually-hidden {
 	color: #e74246
 }
 
+.write-us-form input:invalid::placeholder {
+	color: #e74246
+}
+
 .write-us-form textarea {
 	background-color: #fff;
 	border: 2px solid rgba(0, 0, 0, 0.2);
@@ -912,6 +939,10 @@ input[type="radio"].visually-hidden {
 	color: #e74246
 }
 
+.write-us-form textarea:invalid::placeholder {
+	color: #e74246
+}
+
 .write-us-item {
 	width: 360px
 }
@@ -926,7 +957,8 @@ input[type="radio"].visually-hidden {
 
 .title {
 	justify-content: center;
-	padding: 30px 35px 70px 8px
+	padding: 30px 35px 70px 8px;
+    background-color: #eee
 }
 
 .page-title {
@@ -1051,7 +1083,8 @@ fieldset {
 	color: rgba(0, 0, 0, 0.5)
 }
 
-.transcript:hover {
+.transcript:hover,
+.transcript:focus {
 	color: rgba(0, 0, 0, 1)
 }
 
@@ -1105,6 +1138,10 @@ fieldset {
 	opacity: 1
 }
 
+.filter-section input[type="radio"]:focus+label::before {
+	opacity: 1
+}
+
 .filter-section input[type="radio"]:disabled+label::before {
 	opacity: .2
 }
@@ -1152,6 +1189,10 @@ fieldset {
 	opacity: 1
 }
 
+.filter-section input[type="checkbox"]:focus+label::before {
+	opacity: 1
+}
+
 .filter-section input[type="checkbox"]:disabled+label::before {
 	opacity: .2
 }
@@ -1188,7 +1229,8 @@ fieldset {
 	width: 260px
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:focus {
 	background-color: #dfdfdf
 }
 
@@ -1219,11 +1261,13 @@ fieldset {
 	color: #cacaca
 }
 
-.sort-name a:hover {
+.sort-name a:hover,
+.sort-name a:focus {
 	color: #8d8d8d
 }
 
-.sort-arrows a:hover {
+.sort-arrows a:hover,
+.sort-arrows a:focus {
 	color: #8d8d8d
 }
 
@@ -1239,7 +1283,8 @@ fieldset {
 	color: #000
 }
 
-.sort-current a:hover {
+.sort-current a:hover,
+.sort-current a:focus {
 	color: #000;
 	color: #000
 }
@@ -1305,6 +1350,11 @@ fieldset {
 }
 
 .triangle-bottom,
+.triangle-top:focus {
+	opacity: .4
+}
+
+.triangle-bottom,
 .triangle-top:active {
 	opacity: 1
 }
@@ -1361,7 +1411,23 @@ fieldset {
 	width: 360px
 }
 
-.catalog-item:hover {
+.catalog-item:focus::before {
+	background-color: #fff;
+	background-image: url(../img/browser.svg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	border-radius: 4px;
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+	content: "";
+	height: 40px;
+	opacity: 1;
+	position: absolute;
+	top: -40px;
+	width: 360px
+}
+
+.catalog-item:hover,
+.catalog-item:focus {
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3)
 }
 
@@ -1432,6 +1498,10 @@ fieldset {
 	display: flex
 }
 
+.catalog-item:focus .price-menu {
+	display: flex
+}
+
 .pagination-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -1477,7 +1547,8 @@ fieldset {
 	width: 50px
 }
 
-.pagination-item a:hover {
+.pagination-item a:hover,
+.pagination-item a:focus {
 	background-color: #dfdfdf
 }
 
@@ -1494,6 +1565,7 @@ fieldset {
 }
 
 .pagination-item-current a:hover,
+.pagination-item-current a:focus,
 .pagination-item-current a:active {
 	background: transparent;
 	box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1) inset;
@@ -1520,7 +1592,8 @@ fieldset {
 	width: 260px
 }
 
-.pagination-item-next a:hover {
+.pagination-item-next a:hover,
+.pagination-item-next a:focus {
 	background-color: #dfdfdf
 }
 
