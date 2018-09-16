@@ -6,7 +6,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     
   
 </head>
@@ -286,11 +286,11 @@
                <div class="modal-window">
                 <p class="write-us-item">
                     <label for="write-us-name">Ваше имя:</label>
-                    <input id="write-us-name" type="text" name="name-surname" placeholder="Имя Фамилия" pattern="\D [^0-9]-[A-Za-zА-Яа-яЁё]" required></p>
+                    <input id="write-us-name" type="text" name="name-surname" placeholder="Имя Фамилия" pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)"></p>
                        
                 <p class="write-us-item">
                     <label for="write-us-email">Ваш e-mail:</label>
-                    <input id="write-us-email" type="text" name="email" placeholder="email@example.com"></p>
+                    <input id="write-us-email" type="text" name="email" placeholder="email@example.com" pattern="(\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6})"></p>
                 <p class="write-us-field">
                     <label for="write-us-text">Текст письма:</label>
                     <textarea id="write-us-text" placeholder="В свободной форме"></textarea></p>
